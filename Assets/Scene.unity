@@ -1452,6 +1452,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &828044766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 828044768}
+  - component: {fileID: 828044767}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &828044767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828044766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b48e6d460443845a658661d34fe4b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animations:
+  - sword_attacking
+  - sword_blocking_1
+  - sword_blocking_2
+  - sword_parry_1
+  - sword_parry_2
+  Models:
+  - sword_Damocles_mesh
+  - sword_PigSticker_mesh
+  Sprites:
+  - {fileID: 21300000, guid: 3a70d599303f2264bad10accdd629cac, type: 3}
+  - {fileID: 21300000, guid: d34b3c176914e1547a4fae5d86c2303f, type: 3}
+  - {fileID: 21300000, guid: 3ed871c6f3eaafc4c86b6552f4bf9c29, type: 3}
+  - {fileID: 21300000, guid: 39539203911ef4e4f85600c41f7692ab, type: 3}
+  - {fileID: 21300000, guid: cf2d903813e5f094abe74bbd1d56d3c6, type: 3}
+--- !u!4 &828044768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828044766}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 420.4166, y: 254.69337, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &989476507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,59 +1811,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189891902}
   m_CullTransparentMesh: 1
---- !u!1 &1214982288
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1214982290}
-  - component: {fileID: 1214982289}
-  m_Layer: 0
-  m_Name: ExampleShield
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1214982289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214982288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5597ed0c5a18d3c45a6f2cee93c14f8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: 1
-  uiDisplaySprites:
-  - {fileID: 21300000, guid: 3a70d599303f2264bad10accdd629cac, type: 3}
-  - {fileID: 21300000, guid: d34b3c176914e1547a4fae5d86c2303f, type: 3}
-  - {fileID: 21300000, guid: 39539203911ef4e4f85600c41f7692ab, type: 3}
-  - {fileID: 21300000, guid: 3ed871c6f3eaafc4c86b6552f4bf9c29, type: 3}
-  - {fileID: 21300000, guid: cf2d903813e5f094abe74bbd1d56d3c6, type: 3}
-  uiDisplaySprite: {fileID: 0}
-  itemName: Shield of Heracles
---- !u!4 &1214982290
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214982288}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 739.2598, y: 256.95898, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224570778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,59 +1886,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224570778}
   m_CullTransparentMesh: 1
---- !u!1 &1294208129
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1294208131}
-  - component: {fileID: 1294208130}
-  m_Layer: 0
-  m_Name: ExampleSword
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1294208130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294208129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5597ed0c5a18d3c45a6f2cee93c14f8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemType: 0
-  uiDisplaySprites:
-  - {fileID: 21300000, guid: 3a70d599303f2264bad10accdd629cac, type: 3}
-  - {fileID: 21300000, guid: d34b3c176914e1547a4fae5d86c2303f, type: 3}
-  - {fileID: 21300000, guid: 39539203911ef4e4f85600c41f7692ab, type: 3}
-  - {fileID: 21300000, guid: 3ed871c6f3eaafc4c86b6552f4bf9c29, type: 3}
-  - {fileID: 21300000, guid: cf2d903813e5f094abe74bbd1d56d3c6, type: 3}
-  uiDisplaySprite: {fileID: 0}
-  itemName: Sword of Heracles
---- !u!4 &1294208131
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1294208129}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 739.2598, y: 256.95898, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1315982236
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,7 +2621,7 @@ MonoBehaviour:
         m_MethodName: ItemPickupAddSpriteToInventoryGrid
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1294208130}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2951,7 +2904,7 @@ MonoBehaviour:
         m_MethodName: ItemPickupAddSpriteToInventoryGrid
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1214982289}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -3498,5 +3451,4 @@ SceneRoots:
   - {fileID: 780608125}
   - {fileID: 804717276}
   - {fileID: 233866150}
-  - {fileID: 1294208131}
-  - {fileID: 1214982290}
+  - {fileID: 828044768}
